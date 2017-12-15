@@ -1,0 +1,11 @@
+<div [class]="'alert alert-' + type"
+  [class.with-icon]="showIcon" [class.alert-dismissable]="closable" role="alert">
+  <i [class]="'' + makeIconClass()" *ngIf="showIcon"></i>
+  <div class="content">
+    <h4 *ngIf="title !== ''">
+      
+    </h4>
+    <ng-content></ng-content>
+  </div>
+   <button *ngIf="closable" type="button" class="close" (click)="clickHandle($event)" data-dismiss="alert" aria-hidden="true">×</button>
+</div>

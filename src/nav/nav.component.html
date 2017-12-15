@@ -1,0 +1,6 @@
+<ul [class]="'nav' + (type ? ' nav-' + type:'')
+  + nativeClass"
+  [class.nav-stacked]="mode === 'horizontal'"
+>
+  <ng-content></ng-content>  
+</ul>

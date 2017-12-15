@@ -1,0 +1,10 @@
+<div [class]="'col' +(xs ? ' col-xs-' + xs: '')
+	+(sm ? ' col-sm-' + sm: '')
+	+(md ? ' col-md-' + md: '')
+	+(lg ? ' clo-lg-' + lg: '')
+	+(pull ? ' col-pull-' + pull: '')
+	+(push ? ' col-push-' + push: '')
+	+(offset ? ' col-offset-' + offset: '')
+">
+	<ng-content></ng-content>
+</div>

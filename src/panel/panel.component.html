@@ -1,0 +1,13 @@
+<div [class]="'panel' +(type ? ' panel-' + type:'')
+
+">
+  <div class="panel-heading" *ngIf="heading">
+    {{heading}}
+  </div>
+  <div class="panel-body">
+    <ng-content></ng-content>
+  </div>
+  <div class="panel-footer" *ngIf="footer">
+    {{footer}}
+  </div>
+</div>

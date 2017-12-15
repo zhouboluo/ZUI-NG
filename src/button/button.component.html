@@ -1,0 +1,9 @@
+<button (click)="clickHandle($event)" 
+	[class]="'btn ' + (themeType ? ' btn-' + themeType : '') 
+	+ (size ? ' btn-' + size : '') + ' ' + nativeClass "
+	[class.disabled]="disabled" 
+	[disabled] = "disabled" 
+	[type]="nativeType">
+	<i [class]="'icon icon-' + icon" *ngIf="icon"></i>
+	<ng-content></ng-content>
+</button>

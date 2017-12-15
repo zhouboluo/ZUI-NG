@@ -1,0 +1,9 @@
+<div [class]="'switch ' + (textPosition ? ' text-'+ textPosition: '')"
+	[class.switch-inline]="inline"
+	[class.disabled]="disabled"
+>
+  <input type="checkbox">
+  <label>
+  	<ng-content></ng-content>	
+  </label>
+</div>

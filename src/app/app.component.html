@@ -1,0 +1,63 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+<f-row>
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+  <f-row>
+    <f-nav model="2">
+      <f-nav-item index="1">首页</f-nav-item>
+      <f-nav-item index="2">项目</f-nav-item>
+      <f-nav-item index="3">更多</f-nav-item>
+    </f-nav>
+  </f-row>
+  <f-row>
+    <f-nav model="2" type="secondary">
+      <f-nav-item index="1">首页</f-nav-item>
+      <f-nav-item index="2">项目</f-nav-item>
+      <f-nav-item index="3">更多</f-nav-item>
+    </f-nav>
+  </f-row>
+  <f-row>
+    <f-nav model="2" type="tabs">
+      <f-nav-item index="1">首页</f-nav-item>
+      <f-nav-item index="2">项目</f-nav-item>
+      <f-nav-item index="3">更多</f-nav-item>
+    </f-nav>
+  </f-row>
+  <f-row>
+    <f-nav model="2" type="pills">
+      <f-nav-item index="1">首页</f-nav-item>
+      <f-nav-item index="2">项目</f-nav-item>
+      <f-nav-item index="3">更多</f-nav-item>
+    </f-nav>
+  </f-row>
+  <f-row>
+    <f-col md="4">
+      <f-alert type="success" [show-icon]="true">这是自定义的alert</f-alert>  
+    </f-col>
+    <f-col md="4">
+      <f-alert type="warning" [show-icon]="true">这是自定义的alert</f-alert>  
+    </f-col>
+    <f-col md="4">
+      <f-alert type="error" [show-icon]="true">这是自定义的alert</f-alert>  
+    </f-col>
+  </f-row>
+  <f-row>
+    <f-col md="4" offset="4">
+      <f-panel type="danger" heading="自定义">这是自定义的panel</f-panel>
+    </f-col>
+  </f-row>
+  <f-row>
+    <f-button type="primary" size="lg" icon="star">自定义按钮</f-button>
+    <f-tag type="success" badge="true">自定义标签</f-tag>
+  </f-row>
+  <f-row>
+    <f-col>
+      <f-switch text-position="left">自定义开关</f-switch>
+    </f-col>
+  </f-row>
+</f-row>
+</div>
+
+
