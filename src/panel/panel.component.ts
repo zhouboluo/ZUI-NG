@@ -3,11 +3,11 @@ import {
 } from '@angular/core'
 
 @Component({
-  selector: 'f-panel',
+  selector: 'z-panel',
   templateUrl: './panel.component.html',
   styleUrls: ['./panel.component.css']
 })
-export class FPanel{
+export class ZPanel{
   
   @Input('') type: string = ''
   @Input('') heading: string = ''

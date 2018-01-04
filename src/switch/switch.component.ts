@@ -3,11 +3,11 @@ import {
 } from '@angular/core'
 
 @Component({
-  selector: 'f-switch',
+  selector: 'z-switch',
   templateUrl: './switch.component.html',
   styleUrls: ['./switch.component.css']
 })
-export class FSwitch{
+export class ZSwitch{
   
   @Input('text-position') textPosition: string = ''
   @Input() inline: boolean = false

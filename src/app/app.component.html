@@ -1,63 +1,127 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
-<f-row>
+<z-row>
   <h1>
     Welcome to {{title}}!
   </h1>
-  <f-row>
-    <f-nav model="2">
-      <f-nav-item index="1">首页</f-nav-item>
-      <f-nav-item index="2">项目</f-nav-item>
-      <f-nav-item index="3">更多</f-nav-item>
-    </f-nav>
-  </f-row>
-  <f-row>
-    <f-nav model="2" type="secondary">
-      <f-nav-item index="1">首页</f-nav-item>
-      <f-nav-item index="2">项目</f-nav-item>
-      <f-nav-item index="3">更多</f-nav-item>
-    </f-nav>
-  </f-row>
-  <f-row>
-    <f-nav model="2" type="tabs">
-      <f-nav-item index="1">首页</f-nav-item>
-      <f-nav-item index="2">项目</f-nav-item>
-      <f-nav-item index="3">更多</f-nav-item>
-    </f-nav>
-  </f-row>
-  <f-row>
-    <f-nav model="2" type="pills">
-      <f-nav-item index="1">首页</f-nav-item>
-      <f-nav-item index="2">项目</f-nav-item>
-      <f-nav-item index="3">更多</f-nav-item>
-    </f-nav>
-  </f-row>
-  <f-row>
-    <f-col md="4">
-      <f-alert type="success" [show-icon]="true">这是自定义的alert</f-alert>  
-    </f-col>
-    <f-col md="4">
-      <f-alert type="warning" [show-icon]="true">这是自定义的alert</f-alert>  
-    </f-col>
-    <f-col md="4">
-      <f-alert type="error" [show-icon]="true">这是自定义的alert</f-alert>  
-    </f-col>
-  </f-row>
-  <f-row>
-    <f-col md="4" offset="4">
-      <f-panel type="danger" heading="自定义">这是自定义的panel</f-panel>
-    </f-col>
-  </f-row>
-  <f-row>
-    <f-button type="primary" size="lg" icon="star">自定义按钮</f-button>
-    <f-tag type="success" badge="true">自定义标签</f-tag>
-  </f-row>
-  <f-row>
-    <f-col>
-      <f-switch text-position="left">自定义开关</f-switch>
-    </f-col>
-  </f-row>
-</f-row>
+  <z-row>
+    <z-nav model="2">
+      <z-nav-item index="1">首页</z-nav-item>
+      <z-nav-item index="2">项目</z-nav-item>
+      <z-nav-item index="3">更多</z-nav-item>
+    </z-nav>
+  </z-row>
+  <z-row>
+    <z-nav model="2" type="secondary">
+      <z-nav-item index="1">首页</z-nav-item>
+      <z-nav-item index="2">项目</z-nav-item>
+      <z-nav-item index="3">更多</z-nav-item>
+    </z-nav>
+  </z-row>
+  <z-row>
+    <z-nav model="2" type="tabs">
+      <z-nav-item index="1">首页</z-nav-item>
+      <z-nav-item index="2">项目</z-nav-item>
+      <z-nav-item index="3">更多</z-nav-item>
+    </z-nav>
+  </z-row>
+  <z-row>
+    <z-nav model="2" type="pills">
+      <z-nav-item index="1">首页</z-nav-item>
+      <z-nav-item index="2">项目</z-nav-item>
+      <z-nav-item index="3">更多</z-nav-item>
+    </z-nav>
+  </z-row>
+  <z-row>
+    <z-col md="4">
+      <z-alert type="success" [show-icon]="true">这是自定义的alert</z-alert>  
+    </z-col>
+    <z-col md="4">
+      <z-alert type="warning" [show-icon]="true">这是自定义的alert</z-alert>  
+    </z-col>
+    <z-col md="4">
+      <z-alert type="error" [show-icon]="true">这是自定义的alert</z-alert>  
+    </z-col>
+  </z-row>
+  <z-row>
+    <z-col md="4" offset="4">
+      <z-panel type="danger" heading="自定义">这是自定义的panel</z-panel>
+    </z-col>
+  </z-row>
+  <z-row>
+    <z-button type="primary" size="lg" icon="star">自定义按钮</z-button>
+    <z-button type="primary" [disabled]="true" size="lg" icon="star">不可点按钮</z-button>
+    <z-tag type="success" badge="true">自定义标签</z-tag>
+  </z-row>
+  <z-row>
+    <z-col>
+      <z-switch text-position="left">自定义开关</z-switch>
+    </z-col>
+  </z-row>
+  <z-row>
+    <z-checkbox>苹果</z-checkbox>
+    <z-checkbox>菠萝</z-checkbox>
+    <z-checkbox [disabled]="true">西瓜</z-checkbox>
+  </z-row>
+  <z-row>
+    <z-checkbox type="inline">苹果</z-checkbox>
+    <z-checkbox type="inline">菠萝</z-checkbox>
+    <z-checkbox type="inline" [disabled]="true">西瓜</z-checkbox>
+  </z-row>
+  <z-row>
+    <z-radio name="fruit">苹果</z-radio>
+    <z-radio name="fruit">菠萝</z-radio>
+    <z-radio name="fruit" [disabled]="true">西瓜</z-radio>
+  </z-row>
+  <z-row>
+    <z-radio name="fruit1" type="inline">苹果</z-radio>
+    <z-radio name="fruit1" type="inline">菠萝</z-radio>
+    <z-radio name="fruit1" type="inline" [disabled]="true">西瓜</z-radio>
+  </z-row>
+  <z-row>
+    <z-progress>
+      <z-progress-bar [valuenow] = "40" [valuemin] = "0" [valuemax] = "100"></z-progress-bar>
+    </z-progress>
+  </z-row>
+  <z-row>
+    <z-progress type="striped">
+      <z-progress-bar [valuenow] = "40" [valuemin] = "0" [valuemax] = "100"></z-progress-bar>
+    </z-progress>
+  </z-row>
+  <z-row>
+    <z-progress type="striped" [active]="true">
+      <z-progress-bar type="warning" [valuenow] = "40" [valuemin] = "0" [valuemax] = "100"></z-progress-bar>
+    </z-progress>
+  </z-row>
+  <z-row> 
+    <z-breadcrumb (next)="handle($event)" [prevent]="true">
+      <z-breadcrumb-item [ishome]="true" to="/home">首页</z-breadcrumb-item>
+      <z-breadcrumb-item to="/2">活动管理</z-breadcrumb-item>
+      <z-breadcrumb-item [active]="true" to="/list">活动列表</z-breadcrumb-item>
+    </z-breadcrumb>
+  </z-row>
+  <z-row> 
+    <z-image src="http://zui.sexy/docs/img/img1.jpg" width="100" height="100"></z-image>
+    <z-image type="circle" src="http://zui.sexy/docs/img/img2.jpg" width="100" height="100"></z-image>
+    <z-image type="thumbnail" src="http://zui.sexy/docs/img/img3.jpg" width="100" height="100"></z-image>
+  </z-row>
+  <z-row style="margin-top:20px;">
+    <z-input theme-type="error" placeholder="错的"></z-input>
+  </z-row>  
+  <z-row style="margin-top:20px;">  
+    <z-input size="lg" native-type="password" readonly="true" placeholder="只读"></z-input>
+  </z-row>
+  <z-row style="margin-top:20px;">  
+    <z-input type="textarea" placeholder="只读"></z-input>
+  </z-row>
+  <z-row style="margin-top:20px;">  
+    <z-select>
+      <z-select-option value="china">中国</z-select-option>
+      <z-select-option value="japan">日本</z-select-option>
+    </z-select>
+  </z-row>
+  <z-row style="height:200px;"></z-row>
+</z-row>
 </div>
 
 

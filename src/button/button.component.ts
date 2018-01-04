@@ -3,16 +3,17 @@ import {
 } from '@angular/core'
 
 @Component({
-  selector: 'f-button',
+  selector: 'z-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css']
 })
-export class FButton{
+export class ZButton{
   
   @Input('type') themeType: string = ''
   @Input('native-type') nativeType: string = 'button'
   @Input() size: string = ''
   @Input() icon: string = ''
+  @Input() disabled: boolean = false
   @Input('class') nativeClass: string = ''
   @Output() click: EventEmitter<any> = new EventEmitter<any>()
   

@@ -3,11 +3,11 @@ import {
 } from '@angular/core'
 
 @Component({
-  selector: 'f-nav',
+  selector: 'z-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class FNav{
+export class ZNav{
   
   @Input('') type: string = 'primary'
   @Input('') model: string = ''

@@ -8,11 +8,11 @@ export const ICON_CLASS_MAP: { [key: string]: string } = {
 }
 
 @Component({
-  selector: 'f-alert',
+  selector: 'z-alert',
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.css']
 })
-export class FAlert {
+export class ZAlert {
   @Input() type: string = 'info';
   @Input() title: string = '';
   @Input() center: boolean = false;

@@ -3,11 +3,11 @@ import {
 } from '@angular/core'
 
 @Component({
-  selector: 'f-col',
+  selector: 'z-col',
   templateUrl: './col.component.html',
   styleUrls: ['./col.component.css']
 })
-export class FCol{
+export class ZCol{
   
   @Input('') xs: string = ''
   @Input('') sm: string = ''

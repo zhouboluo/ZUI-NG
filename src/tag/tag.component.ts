@@ -3,11 +3,11 @@ import {
 } from '@angular/core'
 
 @Component({
-  selector: 'f-tag',
+  selector: 'z-tag',
   templateUrl: './tag.component.html',
   styleUrls: ['./tag.component.css']
 })
-export class FTag{
+export class ZTag{
   
   @Input() type: string = ''
   @Input() badge: boolean = false

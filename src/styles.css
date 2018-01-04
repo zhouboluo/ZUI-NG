@@ -1722,14 +1722,19 @@ hr.divider {
   }
 .breadcrumb > li {
   display: inline-block;
+  cursor: pointer;
   }
 .breadcrumb > li + li:before {
   padding: 0 5px;
   color: #ccc;
   content: "/\00a0";
   }
-.breadcrumb > .active {
+.breadcrumb .active a{
   color: #808080;
+  cursor: default;
+  }
+.breadcrumb .active a:hover{
+  text-decoration: none;
   }
 @font-face {
   font-family: ZenIcon;

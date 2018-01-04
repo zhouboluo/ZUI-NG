@@ -1,3 +1,4 @@
-<div [class]="'row '">
+<div [class]="'row '+ nativeClass"
+[style]="customStyles()">
 	<ng-content></ng-content>
 </div>

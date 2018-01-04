@@ -1,18 +1,18 @@
 import {
   Component, Input, OnInit, ElementRef, Optional
 } from '@angular/core'
-import { FNav } from './nav.component'
+import { ZNav } from './nav.component'
 
 @Component({
-  selector: 'f-nav-item',
+  selector: 'z-nav-item',
   templateUrl: './nav-item.component.html',
   styleUrls: ['./nav-item.component.css']
 })
-export class FNavItem implements OnInit{
+export class ZNavItem implements OnInit{
   @Input() index: string
   @Input() href: string
   constructor(
-    @Optional() public rootMenu: FNav,
+    @Optional() public rootMenu: ZNav,
     private el: ElementRef,
   ) {
   }
